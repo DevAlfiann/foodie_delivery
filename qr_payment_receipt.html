@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-fixed": "#131e17", "tertiary-container": "#657167", "on-primary-container": "#cbffc2", "secondary": "#006e1c", "surface-container": "#e8eeff", "surface-dim": "#d4daea", "surface-container-highest": "#dde2f3", "on-secondary-container": "#0c7521", "error-container": "#ffdad6", "inverse-on-surface": "#ecf0ff", "inverse-primary": "#88d982", "outline": "#707a6c", "secondary-container": "#98f994", "primary-fixed": "#a3f69c", "tertiary-fixed-dim": "#bdcabe", "surface-tint": "#1b6d24", "error": "#ba1a1a", "on-secondary-fixed-variant": "#005313", "on-primary-fixed-variant": "#005312", "tertiary": "#4d5950", "primary-container": "#2e7d32", "on-tertiary": "#ffffff", "secondary-fixed": "#98f994", "tertiary-fixed": "#d9e6da", "surface-container-low": "#f1f3ff", "on-tertiary-fixed-variant": "#3e4a41", "on-tertiary-container": "#e8f5e9", "on-primary": "#ffffff", "on-surface-variant": "#40493d", "on-secondary-fixed": "#002204", "inverse-surface": "#2a303d", "surface-container-lowest": "#ffffff", "background": "#f9f9ff", "secondary-fixed-dim": "#7ddc7a", "primary": "#0d631b", "surface-container-high": "#e3e8f9", "primary-fixed-dim": "#88d982", "surface-variant": "#dde2f3", "on-primary-fixed": "#002204", "on-surface": "#161c27", "surface-bright": "#f9f9ff", "surface": "#f9f9ff", "on-background": "#161c27", "on-error-container": "#93000a", "outline-variant": "#bfcaba", "on-secondary": "#ffffff", "on-error": "#ffffff" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-mobile": "1rem", "gutter": "1rem", "space-lg": "1.5rem", "margin": "1.25rem", "space-xl": "2rem", "gutter-mobile": "0.75rem", "space-md": "1rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["17px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }], "label-lg": ["15px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "21px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["13px", { lineHeight: "17px", letterSpacing: "0.015em", fontWeight: "600" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "display": ["34px", { lineHeight: "41px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "14px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "25px", letterSpacing: "-0.005em", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-14 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs min-w-0"><button aria-label="Back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Foodie Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRWaDtjsTiBXKcXIzXt98QPChRmd_KHoaQl1KoAtSQfXP1hivBmbCquC4uZRXfaN_q2aOi7sTwnrXZvwm-bl75eYDUqkqN3Jt0tYUeiG6rJsdhO3rNyiZkD3z6Xd_89xGUWqEUgmfwye_hfx6kdrESqiB_T2OcnCzpZ_GPrwSrd22N2Xs4Bb46M3e2LUMycdm-av1qL6-V9gdEY2pH7oNGsi3HU33CISRUKm1U76g"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate ml-space-xs">Order Checkout</h1></div><div class="flex items-center gap-space-xs flex-shrink-0 pr-space-xs"><button aria-label="Share" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5ryqfCx9XQgcELrPWfqdESm73Y0VqE-d8kgP2Xf3sJcF0aG_uim85wf9nmslRQC1QNUZ0wPq1dK_U19lBpjwau2AJrQsHmIT417YdnKRsQtd4D-tAvBeXFm16Ns85XfgmfZOYM8o2k6qfgnfJ-I0zweSHOr2CtSQRUdXcb2Vs0x3AKVKHaWigyQgd9PXS2SW50GkbNxZ-4eB04c3jCg09y-rTvF3sWKvTyJ1u5Zo"></div></div></header><main class="flex-1 flex flex-col relative w-full pt-14 bg-surface pb-safe"><div class="flex flex-col w-full px-margin-mobile pb-space-xl">
+<!-- Segmented Payment Method Selector -->
+<div class="w-full pt-space-sm mb-space-md">
+<div class="bg-surface-container-high p-space-xs rounded-full flex items-center shadow-sm">
+<button class="flex-1 py-2 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 shadow-sm" id="tab-qr" onclick="selectTab('qr')">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+<span class="">QR Pay</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200" id="tab-card" onclick="selectTab('card')">
+<span class="material-symbols-outlined text-[18px]">credit_card</span>
+<span class="">Card</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200" id="tab-ewallet" onclick="selectTab('ewallet')">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span class="">E-Wallet</span>
+</button>
+</div>
+</div>
+<!-- QR Code Payment Card Container -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-md shadow-md mb-space-lg flex flex-col items-center relative overflow-hidden" id="qr-section">
+<!-- Header with Order Info & Amount -->
+<div class="w-full flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-9 h-9 rounded-full bg-on-tertiary-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+</div>
+<div>
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Order #5096</span>
+<span class="text-on-surface font-label-lg text-label-lg leading-tight block">McDonald's Express</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant font-label-sm text-label-sm block">Total Tagihan</span>
+<span class="text-primary font-headline-sm text-headline-sm font-bold">$19.08</span>
+</div>
+</div>
+<!-- QR Container with Laser Scanline Animation -->
+<div class="relative w-64 h-64 bg-surface-container-low rounded-xl p-4 flex items-center justify-center shadow-inner overflow-hidden my-space-xs">
+<!-- High Fidelity Stylized SVG QR Code -->
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewBox="0 0 160 160">
+<!-- Corner Finder Patterns Top-Left -->
+<rect fill="#161c27" height="38" rx="6" width="38" x="10" y="10"></rect>
+<rect fill="#ffffff" height="26" rx="4" width="26" x="16" y="16"></rect>
+<rect fill="#0d631b" height="14" rx="2" width="14" x="22" y="22"></rect>
+<!-- Corner Finder Patterns Top-Right -->
+<rect fill="#161c27" height="38" rx="6" width="38" x="112" y="10"></rect>
+<rect fill="#ffffff" height="26" rx="4" width="26" x="118" y="16"></rect>
+<rect fill="#0d631b" height="14" rx="2" width="14" x="124" y="22"></rect>
+<!-- Corner Finder Patterns Bottom-Left -->
+<rect fill="#161c27" height="38" rx="6" width="38" x="10" y="112"></rect>
+<rect fill="#ffffff" height="26" rx="4" width="26" x="16" y="118"></rect>
+<rect fill="#0d631b" height="14" rx="2" width="14" x="22" y="124"></rect>
+<!-- Dot Matrix Elements -->
+<circle cx="56" cy="18" fill="#161c27" r="3.5"></circle>
+<circle cx="68" cy="18" fill="#161c27" r="3.5"></circle>
+<circle cx="80" cy="18" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="18" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="30" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="30" fill="#161c27" r="3.5"></circle>
+<circle cx="68" cy="42" fill="#161c27" r="3.5"></circle>
+<circle cx="80" cy="42" fill="#161c27" r="3.5"></circle>
+<circle cx="18" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="30" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="42" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="56" fill="#0d631b" r="3.5"></circle>
+<circle cx="68" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="118" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="130" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="142" cy="56" fill="#161c27" r="3.5"></circle>
+<circle cx="18" cy="68" fill="#161c27" r="3.5"></circle>
+<circle cx="42" cy="68" fill="#161c27" r="3.5"></circle>
+<circle cx="118" cy="68" fill="#161c27" r="3.5"></circle>
+<circle cx="142" cy="68" fill="#161c27" r="3.5"></circle>
+<circle cx="18" cy="80" fill="#161c27" r="3.5"></circle>
+<circle cx="30" cy="80" fill="#161c27" r="3.5"></circle>
+<circle cx="42" cy="80" fill="#161c27" r="3.5"></circle>
+<circle cx="118" cy="80" fill="#161c27" r="3.5"></circle>
+<circle cx="130" cy="80" fill="#0d631b" r="3.5"></circle>
+<circle cx="142" cy="80" fill="#161c27" r="3.5"></circle>
+<circle cx="18" cy="94" fill="#161c27" r="3.5"></circle>
+<circle cx="42" cy="94" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="94" fill="#161c27" r="3.5"></circle>
+<circle cx="118" cy="94" fill="#161c27" r="3.5"></circle>
+<circle cx="142" cy="94" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="106" fill="#161c27" r="3.5"></circle>
+<circle cx="68" cy="106" fill="#161c27" r="3.5"></circle>
+<circle cx="80" cy="106" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="106" fill="#161c27" r="3.5"></circle>
+<circle cx="106" cy="106" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="118" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="118" fill="#161c27" r="3.5"></circle>
+<circle cx="106" cy="118" fill="#0d631b" r="3.5"></circle>
+<circle cx="130" cy="118" fill="#161c27" r="3.5"></circle>
+<circle cx="56" cy="130" fill="#161c27" r="3.5"></circle>
+<circle cx="68" cy="130" fill="#161c27" r="3.5"></circle>
+<circle cx="80" cy="130" fill="#161c27" r="3.5"></circle>
+<circle cx="118" cy="130" fill="#161c27" r="3.5"></circle>
+<circle cx="142" cy="130" fill="#161c27" r="3.5"></circle>
+<circle cx="68" cy="142" fill="#161c27" r="3.5"></circle>
+<circle cx="94" cy="142" fill="#161c27" r="3.5"></circle>
+<circle cx="106" cy="142" fill="#161c27" r="3.5"></circle>
+<circle cx="130" cy="142" fill="#161c27" r="3.5"></circle>
+</svg>
+<!-- Center Foodie Brand Emblem -->
+<div class="absolute inset-0 m-auto w-12 h-12 rounded-full bg-surface-container-lowest shadow-md flex items-center justify-center">
+<div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+<!-- Animated Scanning Line Beam -->
+<div class="absolute left-3 right-3 h-0.5 bg-gradient-to-r from-transparent via-primary-fixed-dim to-transparent shadow-[0_0_12px_#2e7d32] transition-none pointer-events-none" id="scanline" style="top: 230.2px;"></div>
+</div>
+<!-- Timer Countdown and Dynamic Badge -->
+<div class="flex items-center gap-2 mt-3 mb-2 px-3 py-1.5 rounded-full bg-on-tertiary-container text-primary-container">
+<span class="material-symbols-outlined text-[16px] animate-spin">sync</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide">Valid for <span id="countdown" class="">02:21</span> mins</span>
+</div>
+<!-- Scan Instruction -->
+<p class="font-body-sm text-body-sm text-on-surface-variant text-center max-w-xs mb-space-sm">
+      Scan using <span class="font-semibold text-on-surface">GoPay, OVO, Dana, ShopeePay, BCA</span>, or any QRIS mobile banking app.
+    </p>
+<!-- Quick Action QR Buttons -->
+<div class="flex items-center gap-space-sm w-full pt-space-xs">
+<button class="flex-1 h-10 rounded-full bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" onclick="downloadFeedback()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Save QR</span>
+</button>
+<button class="flex-1 h-10 rounded-full bg-surface-container text-primary font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" onclick="shareFeedback()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="">Share QR</span>
+</button>
+</div>
+</div>
+<!-- Digital Perforated Bill / E-Receipt Card -->
+
+<!-- Bottom Action Bar / Sticky Control Buttons -->
+<div class="w-full flex flex-col gap-space-xs mt-space-xs"><!-- Concise Payment Summary Card -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-md mb-space-sm flex items-center justify-between shadow-sm">
+  <div class="flex items-center gap-space-sm">
+    <div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-xs">
+      <span class="material-symbols-outlined text-[22px]">receipt_long</span>
+    </div>
+    <div>
+      <span class="font-label-sm text-label-sm text-on-surface-variant block">Order #5096 • McDonald's</span>
+      <span class="font-headline-sm text-headline-sm text-on-surface font-bold">Total: $19.08</span>
+    </div>
+  </div>
+  <span class="px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+    <span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+    Menunggu Bayar
+  </span>
+</div>
+
+<!-- Main Action Button: Confirmed Payment & View Receipt -->
+<button class="w-full h-14 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-between px-space-lg shadow-md active:scale-95 transition-all" onclick="showToast('Pembayaran berhasil diverifikasi! Membuka struk...'); setTimeout(() =&gt; { window.location.href = '#receipt'; }, 800);">
+  <div class="flex items-center gap-2">
+    <span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+    <span class="">Saya Sudah Membayar (Lihat Struk)</span>
+  </div>
+  <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+
+<!-- Secondary Action Button -->
+<button class="w-full h-11 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" onclick="showToast('Pilih tab di atas untuk mengganti metode pembayaran')">
+  <span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+  <span class="">Ganti Metode Pembayaran</span>
+</button></div>
+<!-- Toast Notification Bubble -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 px-4 py-2.5 rounded-full bg-on-surface text-surface font-label-md text-label-md shadow-xl opacity-0 transition-opacity duration-300 pointer-events-none flex items-center gap-2 z-50" id="toast" style="opacity: 0;">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">check_circle</span>
+<span id="toast-text" class="">Stamp verified by Foodie Pay!</span>
+</div>
+</div>
+<script>
+  // Tab Selector Interaction
+  function selectTab(type) {
+    const tabs = ['qr', 'card', 'ewallet'];
+    tabs.forEach(t => {
+      const el = document.getElementById('tab-' + t);
+      if (t === type) {
+        el.className = "flex-1 py-2 px-3 rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200 shadow-sm";
+      } else {
+        el.className = "flex-1 py-2 px-3 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all duration-200";
+      }
+    });
+
+    if (type !== 'qr') {
+      showToast('Switched payment channel to ' + type.toUpperCase());
+    } else {
+      showToast('Dynamic QRIS active');
+    }
+  }
+
+  // Laser Scan-Line Micro Animation
+  const scanline = document.getElementById('scanline');
+  let scanPos = 16;
+  let scanDirection = 1;
+  setInterval(() => {
+    scanPos += 1.8 * scanDirection;
+    if (scanPos > 240) scanDirection = -1;
+    if (scanPos < 14) scanDirection = 1;
+    if (scanline) {
+      scanline.style.top = scanPos + 'px';
+    }
+  }, 16);
+
+  // QR Timer Countdown
+  let secondsLeft = 298;
+  const countdownEl = document.getElementById('countdown');
+  setInterval(() => {
+    if (secondsLeft > 0) {
+      secondsLeft--;
+      const mins = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
+      const secs = String(secondsLeft % 60).padStart(2, '0');
+      if (countdownEl) countdownEl.innerText = mins + ':' + secs;
+    }
+  }, 1000);
+
+  // Stamp Impact Bounce Animation
+  function stampAgain() {
+    const stamp = document.getElementById('bill-stamp');
+    if (!stamp) return;
+    stamp.style.transform = 'scale(2.4) rotate(0deg)';
+    stamp.style.opacity = '0';
+    setTimeout(() => {
+      stamp.style.transform = 'scale(1) rotate(-12deg)';
+      stamp.style.opacity = '1';
+      showToast('Stamp verified by Foodie Pay!');
+    }, 150);
+  }
+
+  function triggerPrintStamp() {
+    stampAgain();
+    showToast('Menyiapkan file PDF Receipt...');
+  }
+
+  function downloadFeedback() {
+    showToast('QR Code tersimpan di Galeri');
+  }
+
+  function shareFeedback() {
+    showToast('Tautan QRIS disalin ke clipboard');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toast');
+    const toastText = document.getElementById('toast-text');
+    if (!toast || !toastText) return;
+    toastText.innerText = msg;
+    toast.style.opacity = '1';
+    setTimeout(() => {
+      toast.style.opacity = '0';
+    }, 2400);
+  }
+
+  // Initial trigger for stamp
+  setTimeout(stampAgain, 400);
+</script></main>
+
+</body></html>

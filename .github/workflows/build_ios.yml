@@ -1,0 +1,55 @@
+name: Build iOS & WidgetKit Extension
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch: # Memungkinkan trigger manual dari GitHub Actions tab
+
+jobs:
+  build-ios:
+    name: Compile iOS App & Widget Extension
+    runs-on: macos-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🍏 Set up Xcode
+        run: |
+          echo "Available Xcode versions:"
+          ls /Applications | grep Xcode || true
+          # Memastikan Xcode aktif dipilih
+          sudo xcode-select -r
+
+      - name: 💙 Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: 📦 Install Flutter Dependencies
+        run: flutter pub get
+
+      - name: 🍎 Install iOS CocoaPods
+        run: |
+          cd ios
+          pod install --repo-update
+
+      - name: 🔨 Build iOS Release (No Codesign)
+        run: |
+          # Build runner beserta plugin live_activities dan Swift Widget Extension
+          flutter build ios --release --no-codesign
+
+      - name: 📦 Compress Build Output (.app to .zip)
+        run: |
+          cd build/ios/iphoneos
+          zip -r -y Runner.app.zip Runner.app
+
+      - name: 🚀 Upload iOS Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Foodie-Delivery-iOS-Build
+          path: build/ios/iphoneos/Runner.app.zip
+          retention-days: 7
