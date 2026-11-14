@@ -18,10 +18,8 @@ jobs:
 
       - name: 🍏 Set up Xcode
         run: |
-          echo "Available Xcode versions:"
-          ls /Applications | grep Xcode || true
-          # Memastikan Xcode aktif dipilih
           sudo xcode-select -r
+          xcodebuild -version
 
       - name: 💙 Set up Flutter
         uses: subosito/flutter-action@v2
@@ -30,16 +28,12 @@ jobs:
           cache: true
 
       - name: 📦 Install Flutter Dependencies
-        run: flutter pub get
-
-      - name: 🍎 Install iOS CocoaPods
         run: |
-          cd ios
-          pod install --repo-update
+          flutter precache --ios
+          flutter pub get
 
       - name: 🔨 Build iOS Release (No Codesign)
         run: |
-          # Build runner beserta plugin live_activities dan Swift Widget Extension
           flutter build ios --release --no-codesign
 
       - name: 📦 Compress Build Output (.app to .zip)
